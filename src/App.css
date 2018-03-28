@@ -1,0 +1,159 @@
+/***Presentation du css-----------Debut
+***/
+body{
+  font-family: 'Nunito', sans-serif;
+  background-image:url(./img/ranggi-mangg.jpg);
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+  font-family: 'Pacifico', cursive; 
+  text-align: center;
+  font-size: 30px;
+}
+/*********NaVBAR***********/
+header{
+  background-color: yellow;
+}
+.Navbar{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  align-items: center;
+background-color: yellow;
+}
+.btn{
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.Mylogo{
+  height: 90px;
+  width: 120px;
+}
+h2 , h3 {
+  margin-top: 90px;
+}
+.Link{
+  padding: 20px;
+}
+.MyPresentation{
+  padding-top:60px; 
+  width: 100%;
+  text-align: center;
+}
+/********1st Part: Porfolio:About*/
+.Container-Other{
+  width: 100%;
+}
+
+.MySkill{
+  list-style: square;
+}
+.Block-About{
+  width: 100%;
+  text-align: center;
+}
+/***Project***/
+.Container-Card{
+  display: flex;
+  justify-content:space-between;
+}
+.card-img-top-center{
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius:20px;
+}
+.card{
+  width: 20%;
+  height:30%;
+  margin: 5px;
+  font-family: 'Nunito', sans-serif;
+  box-shadow: 2px 1px 2px 1px;
+  border-radius: 20px; 
+}
+.LinkCV{
+  color: black;
+}
+.TxtCV{
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+/******Footer******/
+footer{
+  width: 100%;
+  background-color: gold;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.LinkNetwork{
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  width: 90%;
+  justify-content: space-around;
+}
+.iconSocial{
+  color: black;
+}
+.TextNetwork{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.TxtFooter{
+  width: 100%;
+  background-color: goldenrod;
+  text-align: center;
+}
+
+/***Hover***/
+.iconSocial:hover{
+ color: rgb(146, 146, 137);
+ border-radius: 30px;
+ padding: 3px;
+ box-shadow: 5px 2px 6px 5px black;
+ background-color:yellow;
+}
+.LinkCV:hover{
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+}
+.Navbar .Link:hover{
+background-color: lightgoldenrodyellow;
+}
+.btn:hover{
+color: goldenrod;
+}
+
+  /*Media Queries Responsive:design*/
+  @media all and (max-width: 1350px){
+    .Navbar{
+      display: flex;
+      flex-direction: column;
+    }
+    .Container-Card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card{
+        margin: 50px;
+        width:70%;
+    }
+    .TxtCV{
+      color:rgb(241, 225, 225);
+    }
+}
+@media screen and (min-width: 640px){
+  .card{
+    margin: 135px;
+  }
+  .TxtCV{
+    color:rgb(241, 225, 225);
+  }
+}
