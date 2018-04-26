@@ -1,11 +1,16 @@
 {
-  "main.css": "static/css/main.d53fb666.css",
-  "main.css.map": "static/css/main.d53fb666.css.map",
-  "main.js": "static/js/main.b4787b2f.js",
-  "main.js.map": "static/js/main.b4787b2f.js.map",
-  "static/media/casab.png": "static/media/casab.3dd185df.png",
-  "static/media/imgprojet.png": "static/media/imgprojet.fffdc674.png",
-  "static/media/intro-bg.jpg": "static/media/intro-bg.23c893ea.jpg",
+  "main.css": "static/css/main.b9db2e3a.css",
+  "main.css.map": "static/css/main.b9db2e3a.css.map",
+  "main.js": "static/js/main.78ee9dcc.js",
+  "main.js.map": "static/js/main.78ee9dcc.js.map",
+  "static/media/LOUVES.png": "static/media/LOUVES.ace7b76a.png",
+  "static/media/css.png": "static/media/css.a0149319.png",
+  "static/media/git.png": "static/media/git.462cc74e.png",
+  "static/media/github.png": "static/media/github.ff1d322d.png",
+  "static/media/html.png": "static/media/html.7bc6a8d3.png",
+  "static/media/js.png": "static/media/js.ecf06096.png",
+  "static/media/materialize.png": "static/media/materialize.9afa27a3.png",
+  "static/media/php2.png": "static/media/php2.c528847b.png",
   "static/media/ranggi-mangg.jpg": "static/media/ranggi-mangg.4b207c6e.jpg",
-  "static/media/site-lmda.png": "static/media/site-lmda.01239f48.png"
+  "static/media/react.png": "static/media/react.98eaa97a.png"
 }
