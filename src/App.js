@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
+import {Animated} from "react-animated-css";
 import './App.css';
-import Logo from './img/Logo.png';
+import gIT from './img/git.png';
+import github from './img/github.png';
+import html from './img/html.png';
+import css from './img/css.png';
+import js from './img/js.png';
+import PHP from './img/php2.png';
+import Boot from './img/boot.jpeg';
+import Materialize from './img/materialize.png';
+import Jsreact from './img/react.png';
+import Logo from './img/LOUVES.png';
+/*import mSQL from './img/mysql.png';
 import Lmda from './img/site-lmda.png';
 import MLD from './img/casab.png';
-import lamaison from './img/imgprojet.png';
+import lamaison from './img/imgprojet.png';*/
 
 class App extends Component {
   render() {
@@ -11,14 +22,21 @@ class App extends Component {
       <div className="App">
       <header>
        <ul className="Navbar">
+       <li className="Link"><a href="#About">A Propos</a></li>
         <li><img src={Logo} className="Mylogo" alt="Mon logo"/></li>
-         <li className="Link"><a href="#About">A Propos</a></li>
+        
          <li className="Link"><a href="#Project">Projet</a></li>
        </ul>
        </header>
        <div className="MyPresentation">
       
-      <h3>Salut</h3>
+ 
+       <Animated animationIn="jackInTheBox" animationOut="fadeOut" isVisible={true}>
+     <div>
+     <h3>Salut</h3> 
+     </div>
+ </Animated>
+      
       <br/>
       <cite>"Tout le monde peut viser au but, celui-là seul est adroit qui l'atteint."</cite>
      <br/>
@@ -26,7 +44,7 @@ class App extends Component {
       </div>
        <div>
         
-       <a href="#About" className="btn btn-circle js-scroll-trigger">
+       <a href="#About" className="btn btn-circle js-scroll-trigger" id="backTop">
       <span className="fa-stack fa-lg"><i className="fa fa-circle fa-stack-2x"></i><i className="fa fa-angle-down fa-stack-1x fa-inverse"></i></span>
               </a>
               
@@ -44,13 +62,13 @@ class App extends Component {
         <div>
         <ul className="MySkill">
         <br/>
-        <li><b>HTML/CSS</b></li>
-        <li><b>JS</b></li>
-        <li><b>ReactJs</b></li>
-        <li><b>PHP/SQL</b></li>
-        <li><b>Git/Github</b></li>
-        <li><b>Boostrap</b></li>
-        <li><b>Materialize CSS</b></li>
+        <li><img src={html} className="mycompéC"/><b>HTML/CSS</b><img src={css} className="mycompéC"/></li>
+        <li><b>JS</b><img src={js} className="mycompéC"/></li>
+        <li><b>React Js</b><img className="mycompéR" src={Jsreact}/> </li>
+        <li><b>PHP</b><img src={PHP} className="mycompé"/></li>
+        <li><img src={gIT} className="mycompéC"/><b>Git/Github</b><img src={github} className="mycompéB"/> </li>
+        <li><b>Boostrap</b><img src={Boot} className="mycompéB"/> </li>
+        <li><b>Materialize CSS</b><img src={Materialize} className="mycompéR"/> </li>
         </ul>
         </div>
       </section>
@@ -58,46 +76,45 @@ class App extends Component {
       <h3>Projet</h3>
       <br/>
        <div className="Container-Card">
+       <div className="MyDiv">
        <div className="card">
-                <img className="card-img-top-center" src={Lmda} alt="Mon projet"/>
-                <div className="card-body">
-                     <p>La Maison des Artistes est un projet qui a été crée par le lycée H. BASTARAUD Dans le cadre du concours « Entreprendre
+       <p className="Title-card">La Maison des artistes</p>
+               
+                    <div className="text-card">
+                        <details> <p>La Maison des Artistes est un projet qui a été crée par le lycée H. BASTARAUD Dans le cadre du concours « Entreprendre
                       en Lycée ».<br/>
+                      Nous avons utilisé pour ce projet le framework ReactJs et nous l'avons fait en méthode Agile.
                       </p>
                       <a href="https://lamaisondesartistes.github.io/ProjetLMDA/#/">Lien du site de lmda</a>
-                        <details>Nous avons utilisé pour ce projet le framework ReactJs et nous l'avons fait en méthode Agile.</details>
+                       </details>
+                       </div>
                 </div>
+
               </div>
+              <div className="MyDiv">
               <div className="card">
-        <img className="card-img-top-center" src={MLD} alt="Mon projet"/>
-        <div className="card-body">
+
+              <p className="Title-card">La maison des artistes</p>
+          <div className="text-card">
+          <details>
           <p>Dans la cadre de la formation Simplon,nous étions chargée de faire un projet qui consiste à faire un début de site e-commerce en redux.
-            <br/><a href="https://github.com/denysl152/Redux-projet">Lien du site "CASABLANCA"</a>
-          </p>
-          <details>Pour ce projet nous avons travailler par équipe de 3 et ce projet nous l'avons fait en 4 jours.</details>
+            <br/>
+            Pour ce projet nous avons travailler par équipe de 3 et ce projet nous l'avons fait en 4 jours.
+            <a href="https://github.com/denysl152/Redux-projet">Lien du site "CASABLANCA"</a>
+          </p></details>
+          </div>
         </div>
+      </div>  
       </div>
-    
-      <div className="card">
-                <img className="card-img-top-center" src={lamaison} alt="Mon projet"/>
-                <div className="card-body">
-                     <p>La Maison des Auto est un projet fictif qui a été crée par moi durant mon temps libre.
-                       Ce projet est un site ecommerce. <br/>
-                      </p>
-                       <a href="https://denysl152.github.io/Website-HTML/dossier/site/">Lien vers la Maison des Auto</a>
-                       <br/>
-                        <details>Ce projet est un projet qui m'a pris 2 jours fait en HTML/CSS/JS.</details>
-                </div>
-                </div>
-                </div>
+            
                
              
      </section>
-     <div className="TxtCV" >
-     <br/>
-    <p>Vous pouvez jetter un coup d'oeil à Mon <a className="LinkCV" href="./img/NewCVdénys.pdf" download> CV</a>  😄😄 Si sa vous intéresse.
-      </p>
-     </div>
+     <div className="TxtCV" style={{color:"black"}} >
+    <div className="download"> <a href="img/NewCVdénys.pdf" download>Télécharger mon CV <br/>
+   <i class="fa fa-2x fa-download"></i></a>
+    </div>
+           </div>
      <footer>
      <div>
         <ul className="LinkNetwork">

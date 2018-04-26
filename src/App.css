@@ -10,9 +10,12 @@ h1 , h2 , h3 , h4 , h5 , h6{
   text-align: center;
   font-size: 40px;
 }
+a{
+  color: black;
+}
 /*********NaVBAR***********/
 header{
-  background-color: gold;
+  background-color: #ffffff;
 }
 .Navbar{
   display: flex;
@@ -20,18 +23,44 @@ header{
   list-style: none;
   width: 100%;
   align-items: center;
-background-color: gold;
+background-color: #ffffff;
+color: black;
+}
+.mycompé{
+  margin-bottom:10px; 
+  margin-left:10px; 
+  margin-right: 10px;
+  width: 110px;
+  height: 65px;
+}
+.mycompéC{
+width: 60px;
+margin-bottom:10px; 
+  margin-left:10px; 
+  margin-right: 10px;
+}
+.mycompéB{
+  margin-left:10px; 
+  margin-bottom:10px; 
+  width: 50px;
+  height: 50px;
+}
+.mycompéR{
+  margin-left:10px; 
+  width: 70px;
 }
 .btn{
-  color: gold;
+  color: gray;
   display: flex;
   justify-content: center;
   padding-top: 90px;
   padding-bottom: 100px;
+  /*animation:  ease-in-out 0.2s background;*/
 }
+
 .Mylogo{
   height: 90px;
-  width: 120px;
+  width: 90px;
 }
 h2 , h3 {
   margin-top: 90px;
@@ -59,34 +88,51 @@ h2 , h3 {
 /***Project***/
 .Container-Card{
   display: flex;
-  justify-content:space-between;
+  justify-content:space-around;
+  margin: 135px;
 }
-.card-img-top-center{
+/*.card-img-top-center{
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius:20px;
+}*/
+.Title-card{
+  font-style:normal;
+  text-align: center;
+}
+.MyDiv{
+  width: 100%;
+}
+.text-card{
+  margin: 10px;
 }
 .card{
-  width: 30%;
-  height: 390px;
-  margin: 5px;
+  width:auto;
+  height: auto;
+  margin: 20px;
   font-family: 'Nunito', sans-serif;
   font-size: 15px;
   box-shadow: 2px 1px 2px 1px;
-  border-radius: 20px; 
+ /* border-radius: 20px; */
 }
 .LinkCV{
-  color: black;
+  color: rgb(2, 2, 2);
 }
 .TxtCV{
-  font-size: 20px;
-  text-align: center;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.download{
+  width: 25%;
+  background-color: white;
+  text-align: center;
+  border: 2px solid black;
 }
 /******Footer******/
 footer{
   width: 100%;
-  background-color: gold;
+  background-color:#ffffff ;
   text-align: center;
   padding-top: 20px;
 }
@@ -99,44 +145,43 @@ footer{
   justify-content: space-around;
   align-items: center;
 }
-.iconSocial{
-  color: black;
-}
 .TextNetwork{
   font-size: 20px;
   color: rgb(0, 0, 0);
 }
 .TxtFooter{
   width: 100%;
-  background-color: goldenrod;
+  background-color: #f8f1f100;
   text-align: center;
 }
 
 /***Hover***/
-.iconSocial:hover{
- color: rgb(146, 146, 137);
- border-radius: 30px;
- padding: 3px;
- box-shadow: 1px 2px 2px 1px black;
- background-color:yellow;
+.fa-twitter{
+  color: #1da1f2;
 }
-.iconSocial:hover:last-child{
-  color: blue;
+.fa-github{
+  color: black;
 }
+
+
 .LinkCV:hover{
   color: black;
   text-decoration: none;
   font-size: 30px;
 }
 .Navbar .Link:hover{
-background-color: lightgoldenrodyellow;
+background-color:lightgrey;
+}
+a:hover{
+  text-decoration: none;
+  color: black;
 }
 .btn:hover{
-color: goldenrod;
+color:gray;
 }
 
   /*Media Queries Responsive:design*/
-  @media all and (max-width: 1350px){
+  @media all and (max-width: 640px){
     .Navbar{
       display: flex;
       flex-direction: column;
@@ -146,25 +191,19 @@ color: goldenrod;
         flex-direction: column;
         justify-content: center;
     }
-    .card{
+    card{
         margin: 50px;
-        width:70%;
-        height: 105vh;
     }
-    .TxtCV{
-      background-image: url(./img/intro-bg.jpg);
-      color:rgb(241, 225, 225);
+    .download{
+      width: 45%;
     }
     .LinkCV{
-      color:rgb(248, 192, 192);
+      color:rgb(3, 3, 3);
     }
 }
 @media screen and (min-width: 640px){
-  .card{
+  /*.card{
     margin: 135px;
     height: 80vh;
-  }
-  .TxtCV{
-    color:rgb(241, 225, 225);
-  }
+  }*/
 }

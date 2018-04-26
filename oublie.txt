@@ -1,0 +1,31 @@
+   <div className="card">
+                <img className="card-img-top-center" src={Lmda} alt="Mon projet"/>
+                <div className="card-body">
+                     <p>La Maison des Artistes est un projet qui a été crée par le lycée H. BASTARAUD Dans le cadre du concours « Entreprendre
+                      en Lycée ».<br/>
+                      </p>
+                      <a href="https://lamaisondesartistes.github.io/ProjetLMDA/#/">Lien du site de lmda</a>
+                        <details>Nous avons utilisé pour ce projet le framework ReactJs et nous l'avons fait en méthode Agile.</details>
+                </div>
+              </div>
+              <div className="card">
+        <img className="card-img-top-center" src={MLD} alt="Mon projet"/>
+        <div className="card-body">
+          <p>Dans la cadre de la formation Simplon,nous étions chargée de faire un projet qui consiste à faire un début de site e-commerce en redux.
+            <br/><a href="https://github.com/denysl152/Redux-projet">Lien du site "CASABLANCA"</a>
+          </p>
+          <details>Pour ce projet nous avons travailler par équipe de 3 et ce projet nous l'avons fait en 4 jours.</details>
+        </div>
+      </div>
+    
+      <div className="card">
+                <img className="card-img-top-center" src={lamaison} alt="Mon projet"/>
+                <div className="card-body">
+                     <p>La Maison des Auto est un projet fictif qui a été crée par moi durant mon temps libre.
+                       Ce projet est un site ecommerce. <br/>
+                      </p>
+                       <a href="https://denysl152.github.io/Website-HTML/dossier/site/">Lien vers la Maison des Auto</a>
+                       <br/>
+                        <details>Ce projet est un projet qui m'a pris 2 jours fait en HTML/CSS/JS.</details>
+                </div>
+                </div>
